@@ -5,14 +5,9 @@
 // By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
 open System
-open System.Diagnostics
+open Utilities
 
-let measure f =
-    let sw = Stopwatch.StartNew()
-    f()
-    sw.Stop()
-    printfn "Duration %s ms" (sw.ElapsedMilliseconds.ToString("#,##0"))
-
+// An infinite sequence (i.e., stream) of Fibonacci numbers
 let fibSequence : seq<bigint> =
     let rec fibInner (a: bigint) (b: bigint) = seq { yield (a + b); yield! (fibInner b (a + b)) }
     seq { yield 1I; yield 2I; yield! fibInner 1I 2I }
@@ -26,5 +21,5 @@ let problem (limit: bigint) =
 
 [<EntryPoint>]
 let main argv =
-    measure (fun () -> problem 4000000I)
+    Util.measure (fun () -> problem 4000000I)
     0
