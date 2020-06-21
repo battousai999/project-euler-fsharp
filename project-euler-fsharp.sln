@@ -13,6 +13,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Utilities", "Utilities\Util
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "prob-n004", "prob-n004\prob-n004.fsproj", "{AAADBE43-912F-4F85-B945-2592E0AC728A}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "prob-n005", "prob-n005\prob-n005.fsproj", "{128CCFE3-3261-4023-921B-2EBF95BCBC02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{AAADBE43-912F-4F85-B945-2592E0AC728A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAADBE43-912F-4F85-B945-2592E0AC728A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAADBE43-912F-4F85-B945-2592E0AC728A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{128CCFE3-3261-4023-921B-2EBF95BCBC02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{128CCFE3-3261-4023-921B-2EBF95BCBC02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{128CCFE3-3261-4023-921B-2EBF95BCBC02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{128CCFE3-3261-4023-921B-2EBF95BCBC02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
