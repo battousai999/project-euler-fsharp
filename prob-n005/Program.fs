@@ -12,3 +12,21 @@ let problem limit =
 let main argv =
     Util.measure (fun () -> problem 20)
     0
+
+
+
+
+// map each number 1..10 to its list of factors
+// --------------------------------------------
+// 1   2   3   4   5   6   7   8   9   10
+// --------------------------------------
+// 1   2   3   2   5   2   7   2   3   2
+//             2       3       2   3   5
+//                             2
+// 
+// group by for each # above using max of each factor for # and already accumulated
+// max for that factor so far
+// ----------------------------------------------------------
+// 1   2   3   5   7   = product(all #'s to then left) = 2520
+//     2   3
+//     2
